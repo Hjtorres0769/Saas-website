@@ -1,0 +1,59 @@
+
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  padding: 16px;
+  background-color: var(--nav-bg-color);
+  border-bottom: solid var(--link-color);
+}
+
+.navbar-toggler {
+  display: block;
+  position: absolute;
+  right: 20px;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+.navbar-toggler span {
+  color: var(--main-color);
+  font-size: 30px;
+  cursor: pointer;
+  pointer-events: none;
+}
+
+[aria-controls="navbarDropdown"] {
+  display: none;
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-brand {
+  margin-right: auto;
+}
+
+.navbar-brand img {
+  width: 125px;
+}
+
+.nav-link a {
+  color: #666;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  font-family: "Hind", sans-serif;
+  text-transform: capitalize;
+  margin-right: 2rem;
+  line-height: 20px;
+}
+
