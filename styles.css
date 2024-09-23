@@ -259,9 +259,11 @@ body>img {
   height: 500px;
   z-index: -1;
 }
+
 .video {
   margin-bottom: 100px;
 }
+
 .video span {
   color: black;
   border-radius: 50% 50%;
@@ -271,4 +273,59 @@ body>img {
   position: relative;
   left: 50%;
   top: 300px;
+}
+
+.hubspot {
+  display: flex;
+  margin-bottom: 150px;
+}
+.images {
+  width: 45%;
+}
+.images .dots{
+  margin-top: 25px;
+  position: absolute;
+  width: 175px;
+  height: 500px;
+  z-index: -1;
+}
+
+.images .woman {
+  margin-left: 40px;
+  width: 350px;
+  height: 400px;
+}
+
+.hubspot-block-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.hubspot-block-text img {
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.hubspot-text {
+  color: var(--text-color);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 25px;
+  margin-bottom: 50px;
+}
+
+.christina {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.job {
+  color: navy;
 }
