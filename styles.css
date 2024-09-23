@@ -115,7 +115,7 @@ body>img {
   margin-left: 150px
 }
 
-.icon {
+.hd-icons .icon {
   background-color: white;
   border-radius: 50%;
   padding: 15px;
@@ -221,9 +221,6 @@ body>img {
   padding: 2px 10px;
 }
 .info-card .icon {
-  padding: 0;
-  border-radius: 0;
-  box-shadow: 0 0 0;
   width: 50px;
 }
 
@@ -329,6 +326,7 @@ body>img {
 .job {
   color: navy;
 }
+
 .businesses {
   margin-bottom: 100px;
 }
@@ -339,6 +337,7 @@ body>img {
   text-align: center;
   margin-bottom: 50px
 }
+
 .logos {
   display: flex;
   justify-content: space-between;
@@ -346,4 +345,71 @@ body>img {
 
 .logo {
   width: 150px;
+}
+
+.pricing {
+  display: flex;
+  margin-bottom: 75px;
+}
+
+.price-card {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  height: 450px;
+  width: 400px;
+  padding: 15px;
+  box-shadow: 0 10px 10px rgba(128, 128, 128, 0.3);
+}
+
+.price-wrapper {
+  margin-left: 20px;
+  margin-top: 25px;
+}
+
+.price-card .price {
+  font-size: 35px;
+}
+
+.price-card .billing {
+  color: var(--text-color);
+}
+
+hr {
+  margin: 20px;
+}
+
+.card-text {
+  color: var(--text-color);
+  padding: 0 15px;
+}
+
+.price-card .play  {
+  width: 150px;
+  margin-left: 10px;
+  margin-top: 150px;
+}
+
+.price-card .credit {
+  color: var(--text-color);
+  font-size: 12px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.grid-container {
+  display: grid;
+  margin-left: 50px;
+  grid-template-columns: repeat(auto-fit , minmax(200px, 1fr));
+  gap: 50px;
+}
+
+.grid-container .icon {
+  width: 50px
+}
+.component {
+  padding: 25px;
+}
+.grid-text {
+  color: var(--text-color);
 }
