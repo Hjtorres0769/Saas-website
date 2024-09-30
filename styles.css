@@ -60,7 +60,7 @@ nav .nav-btn {
   padding: 10px;
 }
 
-body>img {
+body > img {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -72,15 +72,15 @@ body>img {
   width: fit-content;
 }
 
-.header-text h2{
+.header-text h2 {
   font-size: 40px;
   width: 300px;
   font-weight: 500;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .header-text span {
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 .play {
@@ -95,7 +95,6 @@ body>img {
   justify-content: space-between;
   width: 250px;
   margin-top: 30px;
-  
 }
 
 .learn-more {
@@ -112,7 +111,7 @@ body>img {
   display: flex;
   flex-wrap: wrap;
   width: 450px;
-  margin-left: 150px
+  margin-left: 150px;
 }
 
 .hd-icons .icon {
@@ -125,7 +124,6 @@ body>img {
 .hd-icons .google {
   width: 75px;
   height: 75px;
-  
 }
 
 .google-at-as {
@@ -200,7 +198,7 @@ body>img {
   display: flex;
   justify-content: space-around;
   width: 75%;
-  margin:  25px auto;
+  margin: 25px auto;
 }
 
 .circle {
@@ -208,7 +206,7 @@ body>img {
   margin: 10px auto;
   width: 50px;
   height: 50px;
-  background: radial-gradient(var(--learn-more) 5%,  rgba(36, 118, 254, 0.1) 15%);
+  background: radial-gradient(var(--learn-more) 5%, rgba(36, 118, 254, 0.1) 15%);
   border-radius: 50%;
   border: 1px solid;
 }
@@ -230,7 +228,6 @@ body>img {
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.15);
   border: 1px solid rgba(128, 128, 128, 0.15);
 }
-
 
 .sketch {
   display: inline;
@@ -297,7 +294,7 @@ body>img {
 .images {
   width: 45%;
 }
-.images .dots{
+.images .dots {
   margin-top: 25px;
   position: absolute;
   width: 175px;
@@ -353,7 +350,7 @@ body>img {
   font-size: 25px;
   font-weight: 500;
   text-align: center;
-  margin-bottom: 50px
+  margin-bottom: 50px;
 }
 
 .logos {
@@ -400,10 +397,9 @@ hr {
 .card-text {
   color: var(--text-color);
   padding: 0 15px;
-  
 }
 
-.price-card .play  {
+.price-card .play {
   width: 150px;
   margin-left: 10px;
   margin-top: 150px;
@@ -419,13 +415,13 @@ hr {
 .grid-container {
   display: grid;
   margin-left: 50px;
-  grid-template-columns: repeat(auto-fit , minmax(300px, 1fr));
-  
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
   gap: 50px;
 }
 
 .grid-container .icon {
-  width: 50px
+  width: 50px;
 }
 
 .component {
@@ -437,14 +433,16 @@ hr {
 }
 
 .hire-us {
+  display: flex;
   color: white;
   background-color: #20335b;
   width: 100%;
-  height: 700px;
+  height: 600px;
 }
 
 .hire-us-wrapper {
   padding-left: 25px;
+  width: 50%;
 }
 
 .hire-us-text {
@@ -481,7 +479,7 @@ hr {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 250px
+  width: 250px;
 }
 
 .person {
@@ -493,4 +491,77 @@ hr {
 .featured {
   width: 75px;
   height: 75px;
+}
+.form {
+  border-radius: 8px;
+  background-color: white;
+  width: 40%;
+  margin: 20px 20px 20px 75px;
+  padding: 15px;
+}
+
+.form p {
+  color: black;
+}
+
+.names {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+
+.form-name {
+  padding: 10px;
+  width: 150px;
+  margin-right: 20px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#country {
+  margin-left: 15px;
+}
+
+textarea {
+  margin-left: 10px;
+  margin-top: 10px
+}
+
+form .checkbox {
+  margin-top: 10px;
+}
+.checkbox .checkbox {
+  width: 15px;
+  height: 15px;
+  margin-left: 10px;
+}
+
+.label {
+  float: right;
+  width: 90%;
+  font-size: 12px;
+  color: var(--text-color);
+  line-height: 1.5;
+}
+.policy {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 15px;
+  font-size: 13px
+}
+.form span {
+  color: var(--text-color)
+}
+
+.form a {
+  color: var(--learn-more);
+}
+.btn-container {
+  width: fit-content;
+  margin: 10px auto;
+}
+.get-started {
+  font-size: 12px;
+  padding: 10px;
 }
