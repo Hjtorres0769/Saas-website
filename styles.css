@@ -543,6 +543,7 @@ form .checkbox {
   color: var(--text-color);
   line-height: 1.5;
 }
+
 .policy {
   display: flex;
   justify-content: space-around;
@@ -550,6 +551,7 @@ form .checkbox {
   padding: 15px;
   font-size: 13px
 }
+
 .form span {
   color: var(--text-color)
 }
@@ -557,11 +559,58 @@ form .checkbox {
 .form a {
   color: var(--learn-more);
 }
+
 .btn-container {
   width: fit-content;
   margin: 10px auto;
 }
+
 .get-started {
   font-size: 12px;
   padding: 10px;
+}
+
+.links {
+  display: flex;
+  margin-top: 75px;
+  height: 250px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-color);
+  width: 30%;
+}
+
+.links .logo {
+  margin-bottom: 20px;
+}
+
+.address i, .phone i {
+  color: black;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+.company {
+  margin-left: 45px;
+  width: fit-content;
+}
+
+.links a {
+  color: var(--text-color);
+}
+
+.hiring {
+  background: var(--learn-more);
+  font-size: 10px;
+  padding: 2px;
+  margin-left: 10px;
+  border-radius: 5px
+}
+
+.links li {
+  width: fit-content;
+  margin-bottom: 10px;
 }
