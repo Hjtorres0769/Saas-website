@@ -1,16 +1,12 @@
 .navbar {
-  position: sticky;
-  top: 0;
   width: 100%;
   padding: 16px;
-  background-color: var(--nav-bg-color);
-  border-bottom: solid var(--link-color);
 }
 
 .navbar-toggler {
   display: block;
   position: absolute;
-  right: 20px;
+  right: var(--size-20);
   outline: none;
   background-color: transparent;
   border: 1px solid transparent;
@@ -18,7 +14,7 @@
 
 .navbar-toggler span {
   color: var(--main-color);
-  font-size: 30px;
+  font-size: var(--size-30);
   cursor: pointer;
   pointer-events: none;
 }
@@ -52,12 +48,13 @@
   font-family: "Hind", sans-serif;
   text-transform: capitalize;
   margin-right: 2rem;
-  line-height: 20px;
+  line-height: var(--size-20);
 }
 
 nav .nav-btn {
   background: var(--learn-more);
-  padding: 10px;
+  padding: var(--size-10) var(--size-15);
+  font-size: var(--size-10);
 }
 
 body > img {
@@ -76,7 +73,7 @@ body > img {
   font-size: 40px;
   width: 300px;
   font-weight: 500;
-  margin-bottom: 15px;
+  margin-bottom: var(--size-15);
 }
 
 .header-text span {
@@ -84,7 +81,7 @@ body > img {
 }
 
 .play {
-  padding: 15px;
+  padding: var(--size-15);
   background: var(--learn-more);
   color: var(--white);
 }
@@ -102,7 +99,7 @@ body > img {
 }
 
 .title {
-  margin-top: 75px;
+  margin-top: var(--size-75);
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -111,19 +108,19 @@ body > img {
   display: flex;
   flex-wrap: wrap;
   width: 450px;
-  margin-left: 150px;
+  margin-left: var(--size-150);
 }
 
 .hd-icons .icon {
   background-color: white;
   border-radius: 50%;
-  padding: 15px;
+  padding: var(--size-15);
   box-shadow: 10px 10px 10px rgba(128, 128, 128, 0.15);
 }
 
 .hd-icons .google {
-  width: 75px;
-  height: 75px;
+  width: var(--size-75);
+  height: var(--size-75);
 }
 
 .google-at-as {
@@ -134,7 +131,7 @@ body > img {
   display: flex;
   height: 100px;
   width: 360px;
-  margin-left: 75px;
+  margin-left: var(--size-75);
   justify-content: space-between;
 }
 
@@ -146,7 +143,7 @@ body > img {
   width: 100px;
 }
 .pay-we {
-  margin-top: 75px;
+  margin-top: var(--size-75);
   margin-bottom: 50px;
   display: flex;
   height: 100px;
@@ -168,8 +165,8 @@ body > img {
 }
 
 .hd-icons .google-a {
-  width: 75px;
-  height: 75px;
+  width: var(--size-75);
+  height: var(--size-75);
 }
 
 .hd-icons .calendar {
@@ -182,7 +179,7 @@ body > img {
 .block-text {
   text-align: center;
   margin-top: 175px;
-  margin-bottom: 75px;
+  margin-bottom: var(--size-75);
 }
 
 .block-text h2 {
@@ -190,7 +187,7 @@ body > img {
 }
 
 .block-text span {
-  font-size: 20px;
+  font-size: var(--size-20);
   color: var(--text-color);
   line-height: 30px;
 }
@@ -242,7 +239,7 @@ body > img {
 .portfolio .container {
   display: flex;
   background: var(--bg-port);
-  margin-bottom: 75px;
+  margin-bottom: var(--size-75);
   padding-right: 0;
 }
 
@@ -334,7 +331,7 @@ body > img {
 }
 
 .name {
-  font-size: 20px;
+  font-size: var(--size-20);
   font-weight: 500;
 }
 
@@ -378,7 +375,7 @@ body > img {
 }
 
 .price-wrapper {
-  margin-left: 20px;
+  margin-left: var(--size-20);
   margin-top: 25px;
 }
 
@@ -391,7 +388,7 @@ body > img {
 }
 
 hr {
-  margin: 20px;
+  margin: var(--size-20);
 }
 
 .card-text {
@@ -415,8 +412,7 @@ hr {
 .grid-container {
   display: grid;
   margin-left: 50px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 50px;
 }
 
@@ -463,11 +459,11 @@ hr {
 .hire-us-quote {
   font-size: 18px;
   width: 350px;
-  margin: 30px 0 75px 0;
+  margin: 30px 0 var(--size-75) 0;
 }
 
 .test-info {
-  margin-bottom: 75px;
+  margin-bottom: var(--size-75);
 }
 
 .test-info .job {
@@ -489,14 +485,18 @@ hr {
 }
 
 .featured {
-  width: 75px;
-  height: 75px;
+  width: var(--size-75);
+  height: var(--size-75);
 }
+
 .form {
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   background-color: white;
   width: 40%;
-  margin: 20px 20px 20px 75px;
+  height: 90%;
+  margin: var(--size-20) var(--size-20) var(--size-20) var(--size-75);
   padding: 15px;
 }
 
@@ -504,36 +504,48 @@ hr {
   color: black;
 }
 
-.names {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 8px;
+.email {
+  padding: var(--size-10);
+  width: 100%;
+  margin-right: var(--size-20);
+  margin: var(--size-10) auto;
+  border-radius: 5px;
+}
+.name-wrapper {
+  width: 100%;
 }
 
 .form-name {
-  padding: 10px;
-  width: 150px;
-  margin-right: 20px;
-  margin-bottom: 15px;
+  padding: var(--size-10);
   border-radius: 5px;
+  width: 49%;
 }
 
-#country {
-  margin-left: 15px;
+.dropdown {
+  display: flex;
 }
 
-textarea {
-  margin-left: 10px;
-  margin-top: 10px
+.budget {
+  width: 45%;
+}
+
+.country {
+  width: 45%;
+}
+.textbox {
+  width: 100%;
+  height: 150px;
+  padding: var(--size-10);
+  margin: 10px auto;
 }
 
 form .checkbox {
-  margin-top: 10px;
+  margin-top: var(--size-10);
 }
 .checkbox .checkbox {
   width: 15px;
   height: 15px;
-  margin-left: 10px;
+  margin-left: var(--size-10);
 }
 
 .label {
@@ -572,7 +584,7 @@ form .checkbox {
 
 .links {
   display: flex;
-  margin-top: 75px;
+  margin-top: var(--size-75);
   height: 250px;
 }
 
@@ -594,6 +606,8 @@ form .checkbox {
 }
 
 .company {
+  display: flex;
+  flex-direction: column;
   margin-left: 45px;
   width: fit-content;
 }
@@ -613,4 +627,31 @@ form .checkbox {
 .links li {
   width: fit-content;
   margin-bottom: 10px;
+}
+
+.footer {
+  color: var(--text-color);
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.socials {
+  width: 70%;
+  display: flex;
+  justify-content: flex-end;
+}
+.socials i {
+  color: var(--text-color);
+  font-size: 25px;
+  margin-right: 15px;
+}
+
+.copyright p {
+  text-align: center;
+  width: 70%;
+  margin: 25px auto
 }

@@ -274,30 +274,28 @@
         <div class="form">
           <p>Fill out the form and we'll be in touch as soon as possible</p>
           <form target="_self" method="post">
-            <div class="names">
+            <div class="name-wrapper">
               <label for="first-name"></label>
               <input name="first-name" class="form-name" type="text" placeholder="First name" />
               <label for="last-name"></label>
               <input name="first-name" class="form-name" type="text" placeholder="Last name" />
-              <label for="first-name"></label>
-              <input name="first-name" class="form-name" type="text" placeholder="First name" />
-              <label for="last-name"></label>
-              <input name="last-name" class="form-name" type="text" placeholder="Last name" />
+            </div>
+            <div class="email-wrapper">
+              <label for="email"></label>
+              <input name="email" class="email" type="email" placeholder="Email" />
             </div>
             <div class="dropdowns">
               <label for="budget"></label>
-              <select name="budget" id="budget">
+              <select name="budget" id="budget" class="budget">
                 <option value="budget">Budget</option>
               </select>
-              <select name="country" id="country">
+              <select name="country" id="country" class="country">
                 <option value="country">Country</option>
               </select>
             </div>
             <textarea
-              name="needs"
-              id="text-box"
-              cols="43"
-              rows="10"
+              name="textbox"
+              class="textbox"
               placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
             <div class="checkbox">
               <input type="checkbox" class="checkbox" />
@@ -344,7 +342,6 @@
             <li><a href="#">Release Notes</a></li>
             <li><a href="#">Integrations</a></li>
             <li><a href="#">Pricing</a></li>
-            
           </ul>
         </div>
         <div class="company">
@@ -360,18 +357,41 @@
         <div class="company">
           <h3>Resources</h3>
           <ul>
-            <li><a href="#"><i class="fa-solid fa-circle-info"></i> Help</a></li>
-            <li><a href="#"><i class="fa-solid fa-circle-user"></i> Your Account</a></li>
+            <li>
+              <a href="#"><i class="fa-solid fa-circle-info"></i> Help</a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-solid fa-circle-user"></i> Your Account</a>
+            </li>
           </ul>
         </div>
       </div>
     </section>
-    
-    <hr>
-    
+
+    <hr />
+
     <footer>
-      <div class="container">
-        
+      <div class="container footer">
+        <div class="social">
+          <span>Privacy & Policy &gt; Terms &gt; Site map</span>
+          <div class="socials">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-square-google-plus"></i>
+            <i class="fa-brands fa-square-twitter"></i>
+            <i class="fa-brands fa-square-github"></i>
+            <select name="USA" id="USA">
+              <option value="Unites States">United States</option>
+            </select>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; Front. 2022 Responsive design. All rights reserved.</p>
+          <p>
+            When you visit or interact wiht our sites, services or tools, we or our autherized services may use cookies
+            for storing information to help provide you with a better, faster and safer experience and for marketing
+            purposes.
+          </p>
+        </div>
       </div>
     </footer>
   </body>
