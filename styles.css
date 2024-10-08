@@ -101,14 +101,14 @@ body > img {
 .title {
   margin-top: var(--size-75);
   width: 100%;
+  height: fit-content;
   display: flex;
-  flex-wrap: wrap;
 }
+
 .hd-icons {
   display: flex;
   flex-wrap: wrap;
-  width: 450px;
-  margin-left: var(--size-150);
+  margin-left: 10%;
 }
 
 .hd-icons .icon {
@@ -126,6 +126,7 @@ body > img {
 .google-at-as {
   display: flex;
   width: fit-content;
+  height: fit-content;
 }
 .at-as {
   display: flex;
@@ -142,11 +143,12 @@ body > img {
 .hd-icons .asana {
   width: var(--size-100);
 }
+
 .pay-we {
-  margin-top: var(--size-75);
+  margin-top: var(--size-125);
   margin-bottom: var(--size-50);
   display: flex;
-  height: var(--size-100);
+  height: fit-content;
   width: 350px;
   justify-content: space-between;
 }
@@ -178,7 +180,7 @@ body > img {
 
 .block-text {
   text-align: center;
-  margin-top: var(--size-175);
+  margin-top: var(--size-75);
   margin-bottom: var(--size-75);
 }
 
@@ -191,6 +193,7 @@ body > img {
   color: var(--text-color);
   line-height: var(--size-30);
 }
+
 .line {
   display: flex;
   justify-content: space-around;
@@ -226,20 +229,22 @@ body > img {
   border: 1px solid rgba(128, 128, 128, 0.15);
 }
 
+
 .sketch {
   display: inline;
   background-color: var(--sketch);
   font-size: 14px;
   padding: 2px var(--size-10);
 }
+
 .info-card .icon {
   width: var(--size-50);
 }
 
 .portfolio .container {
   display: flex;
+  width: 100%;
   background: var(--bg-port);
-  margin-bottom: var(--size-75);
   padding-right: 0;
 }
 
@@ -250,13 +255,12 @@ body > img {
 
 .portfolio img {
   width: 650px;
-  margin-top: var(--size-100);
+  margin-top: var(--size-75);
 }
 
 .image-text {
   display: flex;
   flex-direction: column;
-  flex-basis: 450px;
   margin: auto 0;
 }
 
@@ -305,6 +309,11 @@ body > img {
   height: 400px;
 }
 
+.hubspot-block-text img {
+  width: var(--size-100);
+  margin-bottom: var(--size-50);
+}
+
 .hubspot-block-text {
   width: 50%;
   display: flex;
@@ -312,10 +321,6 @@ body > img {
   align-self: center;
 }
 
-.hubspot-block-text img {
-  width: var(--size-100);
-  margin-bottom: var(--size-50);
-}
 
 .hubspot-text {
   color: var(--text-color);
@@ -457,12 +462,13 @@ hr {
 }
 
 .hire-us-quote {
-  font-size: 18px;
-  width: 350px;
+  font-size: 1rem;
+  width: 325px;
   margin: var(--size-30) 0 var(--size-75) 0;
 }
 
 .test-info {
+  height: 200px;
   margin-bottom: var(--size-75);
 }
 
@@ -476,6 +482,7 @@ hr {
   justify-content: space-between;
   align-items: center;
   width: 250px;
+  margin-top: 20%;
 }
 
 .person {
@@ -521,17 +528,19 @@ hr {
   width: 49%;
 }
 
-.dropdown {
+.dropdowns {
   display: flex;
+  width: 100%;
 }
 
 .budget {
-  width: 45%;
+  width: 50%;
 }
 
 .country {
-  width: 45%;
+  width: 50%;
 }
+
 .textbox {
   width: 100%;
   height: var(--size-150);
@@ -550,8 +559,8 @@ form .checkbox {
 
 .label {
   float: right;
-  width: 90%;
-  font-size: 12px;
+  width: 95%;
+  font-size: 15px;
   color: var(--text-color);
   line-height: 1.5;
 }
@@ -585,14 +594,18 @@ form .checkbox {
 .links {
   display: flex;
   margin-top: var(--size-75);
-  height: 250px;
+  height: fit-content;
+}
+
+.links-wrapper {
+  display: flex;
 }
 
 .contact-info {
   display: flex;
   flex-direction: column;
   color: var(--text-color);
-  width: 30%;
+  width: fit-content;
 }
 
 .links .logo {
@@ -639,7 +652,9 @@ form .checkbox {
   align-items: center;
   color: black;
 }
-
+.social span {
+  width: 50%;
+}
 .socials {
   width: 70%;
   display: flex;

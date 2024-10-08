@@ -1,0 +1,160 @@
+@media screen and (max-width: 768px) {
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+  
+  [aria-expanded="false"]~ul {
+    display: none;
+  }
+  
+  [aria-expanded="true"]~ul {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: var(--size-50);
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0 0 20px rgba(52, 49, 75, 0.1);
+  }
+  
+  [aria-expanded="true"]~ul li a {
+    margin-right: var(--size-20);
+    color: var(--font-color-dark);
+  }
+  
+  .title {
+    flex-wrap: wrap; 
+  }
+  .header-text {
+    text-align: center;
+    margin: auto
+  }
+  .hd-icons {
+    margin: var(--size-25) 0 0 0;
+    padding: var(--size-75);
+  }
+  
+  .at-as {
+    margin-left: var(--size-125);
+  }
+  
+  .pay-we {
+    width: 400px;
+    margin-top: var(--size-50);
+  }
+  
+  .a-cal {
+    margin-left: var(--size-125)
+  }
+  
+  .card-table {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--size-30)
+  }
+  
+  .info-card {
+    width: 100%;
+  }
+  
+  .portfolio .container {
+    flex-direction: column;
+    height: fit-content;
+  }
+  
+  .portfolio img {
+    margin: var(--size-50) auto 0;
+  }
+  
+  .image-text {
+    text-align: center;
+  }
+  
+  .image-text .btn {
+    margin: auto;
+  }
+  
+  .hubspot {
+    flex-direction: column;
+  }
+  
+  .images {
+    margin: auto;
+  }
+  
+  .hubspot-block-text img {
+    margin: var(--size-30) auto
+  }
+  
+  .hubspot-block-text {
+    text-align: center;
+    width: 100%;
+    margin-top: var(--size-50);
+  }
+  
+  .logos img {
+    width: var(--size-100);
+  }
+  
+  .pricing {
+    flex-direction: column;
+  }
+  
+  .price-card {
+    width: 90%;
+    height: fit-content;
+  }
+  
+  .price-wrapper {
+    text-align: center
+  }
+  
+  .price-card .play {
+    margin: var(--size-50) auto 0;
+  }
+  
+  .price-card .credit {
+    margin: 10px auto 0;
+  }
+  
+  .hire-us {
+    flex-direction: column;
+    height: fit-content;
+    padding: var(--size-25);
+  }
+  
+  .hire-us-wrapper {
+    display: flex;
+  }
+  
+  .hire-us-text p {
+    width: 100%;
+  }
+  
+  .hire-us hr {
+    width: 100%;
+  }
+  
+  .test-info {
+    margin: auto;
+    padding: var(--size-25);
+  }
+  
+  .form {
+    width: 100%;
+    margin: auto;
+    height: fit-content;
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .links-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  
+}
