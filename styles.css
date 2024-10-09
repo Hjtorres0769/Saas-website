@@ -241,6 +241,11 @@ body > img {
   width: var(--size-50);
 }
 
+.info-card:hover {
+  position: relative;
+  bottom: 5px;
+}
+
 .portfolio .container {
   display: flex;
   width: 100%;
