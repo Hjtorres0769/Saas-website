@@ -279,19 +279,20 @@
           <form target="_self" method="post">
             <div class="name-wrapper">
               <label for="first-name"></label>
-              <input name="first-name" class="form-name" type="text" placeholder="First name" />
+              <input name="first-name" id="first-name" class="form-name" type="text" placeholder="First name" />
               <label for="last-name"></label>
-              <input name="first-name" class="form-name" type="text" placeholder="Last name" />
+              <input name="last-name" id="last-name" class="form-name" type="text" placeholder="Last name" />
             </div>
             <div class="email-wrapper">
               <label for="email"></label>
-              <input name="email" class="email" type="email" placeholder="Email" />
+              <input name="email" id="email" class="email" type="email" placeholder="Email" />
             </div>
             <div class="dropdowns">
               <label for="budget"></label>
               <select name="budget" id="budget" class="budget">
                 <option value="budget">Budget</option>
               </select>
+              <label for="country"></label>
               <select name="country" id="country" class="country">
                 <option value="country">Country</option>
               </select>
@@ -301,22 +302,22 @@
               class="textbox"
               placeholder="Tell us more about your project, needs, and timeline, please..."></textarea>
             <div class="checkbox">
-              <input type="checkbox" class="checkbox" />
               <div class="label">
+                <input id="checkbox" type="checkbox" class="checkbox" />
                 <label for="agreement" class="agreement">
                   Yes I'd like to recieve occasional marketing emails from Front. I have the right to opt out an any
                   time.
                 </label>
               </div>
             </div>
+            <div class="policy">
+              <span>View privacy policy</span>
+              <a href="#">View privacy policy</a>
+            </div>
+            <div class="btn-container">
+              <div class="play get-started btn">Get started</div>
+            </div>
           </form>
-          <div class="policy">
-            <span>View privacy policy</span>
-            <a href="#">View privacy policy</a>
-          </div>
-          <div class="btn-container">
-            <div class="play get-started btn">Get started</div>
-          </div>
         </div>
       </div>
     </section>
